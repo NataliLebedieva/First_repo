@@ -127,4 +127,15 @@
 # else:
 #     print(f"розмір пакету SMS для розсилки {chunk}")
 
+# def greeting():
+#     print("Hello world!")
+# greeting()
+
+# username = input("Enter your name: ")
+# def invite_to_event(username):
+#     return(f"Dear {username}, we have the honour to invite you to our event")
+# invite_to_event(username)
+# print(f"Dear {username}, we have the honour to invite you to our event")
+
+
 
