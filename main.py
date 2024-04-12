@@ -109,5 +109,22 @@
 #     num = num - 1
 # print(sum)
 
+# message = "Never argue with stupid people, they will drag you down to their level and then beat you with experience."
+# search = "r"
+# result = 0
+# for char in message:
+#     if char == search:
+#         result += 1
+# print(result)
+
+
+# pool = 1000
+# quantity = int(input("Enter the number of mailings: "))
+# try:
+#     chunk = int(pool / quantity)
+# except ZeroDivisionError:
+#     print('Divide by zero completed!')
+# else:
+#     print(f"розмір пакету SMS для розсилки {chunk}")
 
 
