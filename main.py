@@ -102,9 +102,12 @@
 #     result = "It is zero"
 # print(result)
 
-num = int(input("Enter the integer (0 to 100): "))
-sum = num
-while num >= 0:
-    sum += num - 1
-print(sum)
+# num = int(input("Enter the integer (0 to 100): "))
+# sum = 0
+# while num >= 1:
+#     sum += num
+#     num = num - 1
+# print(sum)
+
+
 
