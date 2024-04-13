@@ -137,5 +137,30 @@
 # invite_to_event(username)
 # print(f"Dear {username}, we have the honour to invite you to our event")
 
+# def discount_price(price, discount):
+#     def apply_discount():
+#         nonlocal
+#         price * (1 - discount)    
+#     apply_discount()
+#     return(apply_discount)
+
+# def string_to_codes(string: str) -> dict:
+#     # Ініціалізація словника для зберігання кодів
+#     codes = {}  
+#     # Перебір кожного символу в рядку
+#     for ch in string:  
+#         # Перевірка, чи символ вже є в словнику
+#         if ch not in codes:
+#             # Додавання пари символ-код в словник  
+#             codes[ch] = ord(ch)  
+#     return codes
+
+# result = string_to_codes("Hello world!")
+# print(result)
+        
+# result1 = string_to_codes("Natali") # букву а додає в словник один раз, дублі видаляє
+# print(result1)
+
+    
 
 
