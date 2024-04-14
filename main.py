@@ -182,11 +182,14 @@
 # print(multiply(2, 3))
 # print(multiply(2, 3, 5))
 
-first_name = input("Введіть ім'я: ")
-def get_fullname(first_name, middle_name, last_name):
-    if middle_name:
-        print(f"{first_name} {middle_name} {last_name}")
+def get_fullname(first_name, last_name, middle_name):
+    if middle_name == None:
+        return f"{first_name} {last_name}"
     else:
-        print(f"{first_name} {last_name}")
-    return get_fullname
-first_name = input("Введіть ім'я: ")
+        return f"{first_name} {middle_name} {last_name}"
+    
+def get_fullname(first_name, middle_name, last_name):
+    if (len(middle_name)) == 0:
+        return f'{first_name} {last_name}'
+    else:
+        return f'{first_name} {middle_name} {last_name}'
