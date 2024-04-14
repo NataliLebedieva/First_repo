@@ -161,6 +161,32 @@
 # result1 = string_to_codes("Natali") # букву а додає в словник один раз, дублі видаляє
 # print(result1)
 
+# def discount_price(price, discount):
     
+#     def apply_discount():
+#         nonlocal price
+#         price = price * (1 - discount)
+#     apply_discount()
+           
+#     return price
 
 
+# def multiply(numbers_one, number_two, number_three=None):
+#     print(number_three, end=' ')
+#     if number_three is None:
+#         return numbers_one * number_two
+#     else:
+#         return numbers_one * number_two * number_three
+
+
+# print(multiply(2, 3))
+# print(multiply(2, 3, 5))
+
+first_name = input("Введіть ім'я: ")
+def get_fullname(first_name, middle_name, last_name):
+    if middle_name:
+        print(f"{first_name} {middle_name} {last_name}")
+    else:
+        print(f"{first_name} {last_name}")
+    return get_fullname
+first_name = input("Введіть ім'я: ")
