@@ -182,14 +182,56 @@
 # print(multiply(2, 3))
 # print(multiply(2, 3, 5))
 
-def get_fullname(first_name, last_name, middle_name):
-    if middle_name == None:
-        return f"{first_name} {last_name}"
-    else:
-        return f"{first_name} {middle_name} {last_name}"
+# def get_fullname(first_name, last_name, middle_name):
+#     if middle_name == None:
+#         return f"{first_name} {last_name}"
+#     else:
+#         return f"{first_name} {middle_name} {last_name}"
     
-def get_fullname(first_name, middle_name, last_name):
-    if (len(middle_name)) == 0:
-        return f'{first_name} {last_name}'
+# def get_fullname(first_name, middle_name, last_name):
+#     if (len(middle_name)) == 0:
+#         return f'{first_name} {last_name}'
+#     else:
+#         return f'{first_name} {middle_name} {last_name}'
+
+# def format_string(string, length):
+#     if len(string) >= length:
+#         return string
+#     else:
+#         total_spaces = length - len(string)
+#         space_left = total_spaces // 2
+#         space_right = total_spaces - space_left
+#         return " " * space_left + string   
+
+# def first(size, *args):
+#     return size + len(args)
+
+# def second(size, **kwargs):
+#     return size + len(kwargs)
+
+def factorial(n):
+    if n < 2:
+        return 1
     else:
-        return f'{first_name} {middle_name} {last_name}'
+        return n * factorial(n - 1)
+
+
+def number_of_groups(n, k):
+    
+    return factorial(n) // (factorial(n-k) * factorial(k))  
+
+# def factorial(n):
+#     if n == 0: # базовий випадок
+#         return 1
+#     else:
+#         return n * factorial(n-1) # рекурсивний випадок
+
+# print(factorial(5)) # виведе 120
+
+# def fibonacci(n):
+#     if n <= 1: # базовий випадок
+#         return n
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2) # рекурсивний випадок
+
+# print(fibonacci(10)) # виведе 55
