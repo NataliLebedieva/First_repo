@@ -209,16 +209,16 @@
 # def second(size, **kwargs):
 #     return size + len(kwargs)
 
-def factorial(n):
-    if n < 2:
-        return 1
-    else:
-        return n * factorial(n - 1)
+# def factorial(n):
+#     if n < 2:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
 
 
-def number_of_groups(n, k):
+# def number_of_groups(n, k):
     
-    return factorial(n) // (factorial(n-k) * factorial(k))  
+#     return factorial(n) // (factorial(n-k) * factorial(k))  
 
 # def factorial(n):
 #     if n == 0: # базовий випадок
@@ -235,3 +235,17 @@ def number_of_groups(n, k):
 #         return fibonacci(n-1) + fibonacci(n-2) # рекурсивний випадок
 
 # print(fibonacci(10)) # виведе 55
+
+
+def say_hello():
+		# тіло функції
+    print('Привіт, Світ!')
+
+# Кінець функції say_hello()
+
+# виклик функції
+say_hello()
+
+# ще один виклик функції
+say_hello()
+
