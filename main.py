@@ -309,5 +309,33 @@
 #     body +='|{:^15}|{:^15}|{:^15}|\n'.format(num, num**2, num**3)    
 # print(separator, header, separator, body, separator, sep='\n')
 
+# trans_map = {ord('Н'):'N', ord('п'):'h'}
+# ukr_name = 'Наташа привіт'
+# lat_name = ukr_name.translate(trans_map)
+# print(lat_name)
 
+# text = 'Hello world'
+# indx = text.find('world')
+# print(indx)
 
+from datetime import datetime 
+def get_days():
+    user_input = input('Введіть дату в форматі dd.mm: ')
+    user_date = datetime.strptime(user_input, '%d.%m')
+    print(user_input, type(user_input))
+    print(user_date, type(user_date))
+    current_day = datetime.now()
+    print(current_day)
+    user_date = user_date.replace(year=current_day.year)
+    print(user_date)
+    delta_days = user_date - current_day
+    target_date = datetime.strftime(user_date, '%d-%B-%Y')
+    
+    if delta_days.days > 0:
+        print(f'{delta_days.days} days left before {target_date}')
+    else:
+        user_date = user_date.replace(year=user_date.year + 1)
+        delta_days = user_date - current_day
+        target_date = datetime.strftime(user_date, '%d-%B-%Y')
+        print(f'{delta_days.days} days left before {target_date}')
+get_days()
