@@ -237,15 +237,77 @@
 # print(fibonacci(10)) # виведе 55
 
 
-def say_hello():
-		# тіло функції
-    print('Привіт, Світ!')
+# def say_hello():
+# 		# тіло функції
+#     print(f'Привіт, {name}!')
+#     print(f'Привіт, my {name1}!')
 
-# Кінець функції say_hello()
+# # Кінець функції say_hello()
 
-# виклик функції
-say_hello()
+# # виклик функції
+# name = input("Введіть ім'я: ")
+# name1 = input("Як вас звати: ")
+# say_hello()
 
-# ще один виклик функції
-say_hello()
+# def add_numbers(num1: int, num2: int) -> int:
+#     sum = num1 + num2
+#     return sum
+
+# result = add_numbers(5, 10)
+# print(result)  # Виведе: 15
+
+# def is_even(num: int) -> bool:
+#     return num % 2 == 0
+
+# check_even = is_even(5)
+# print(check_even)  # Виведе: True
+
+# def print_all_args(*args):
+#     for arg in args:
+#         print(arg)
+
+# print_all_args(1, 'hello', True)
+
+# def factorial(n):
+#     print("Виклик функції factorial з n = ", n)
+#     if n == 1:
+#         print("Базовий випадок, n = 1, повернення 1")
+#         return 1
+#     else:
+#         result = n * factorial(n-1)
+#         print("Повернення результату для n = ", n, ": ", result)
+#         return result
+
+# print(factorial(5))
+
+
+# text = "First sentence. Second sentence. Third sentence."
+# sentensces = text.split(". ")
+# print(sentensces)
+
+# import re
+# text = "First sentence. Second sentence! Third sentence?"
+# sentensces = re.split("[.!?]", text)
+# print(sentensces)
+
+
+# import re
+# text = "First sentence.\nSecond sentence!\nThird sentence?"
+# # sentensces = re.split("[.!?]", text)
+# print(text)
+# sentensces = text.split("\n")
+# print(sentensces)
+# text_new = " ".join(sentensces)
+# print(text_new)
+
+
+# numbers = [1, 2, 3, 4, 5]
+# header = '|{:^15}|{:^15}|{:^15}|'.format('int', 'int^2','int^3')
+# separator = '-'*len(header)
+# body = ''
+# for num in numbers:
+#     body +='|{:^15}|{:^15}|{:^15}|\n'.format(num, num**2, num**3)    
+# print(separator, header, separator, body, separator, sep='\n')
+
+
 
